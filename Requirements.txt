@@ -1,0 +1,25 @@
+## Case: List user information
+1. Demand: Add, delete, modify and check user information
+2. Design:
+1. Technical selection: Servlet + JSP + MySQL + JDBCTemplate + Druid + BeanUtilS + tomcat
+
+MySQL(I separated user info and login info in case one user may have more than one account):
+create database db_dts3;
+use db_dts3;
+
+create table user (
+id int primary key,
+name varchar (20) not null,
+gender varchar (7),
+age int,
+address varchar (32),
+qq varchar (20),
+email varchar (50)
+);
+
+CREATE TABLE User_Login (
+id INT PRIMARY KEY,
+username VARCHAR (20) NOT NULL,
+PASSWORD VARCHAR (20) NOT NULL,
+CONSTRAINT fk_login FOREIGN KEY (id) REFERENCES USER(id)
+);
