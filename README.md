@@ -1,4 +1,5 @@
-# User-Information-Management-Web-Application
-Technical selection: Servlet + JSP + MySQL + JDBCTemplate + Druid + BeanUtilS + tomcat
+# User-Information-Management-Web-Application  
 Web app with login, welcome, list all users, add and update pages using Bootstrap and jsp  
+Technical selection: Servlet + JSP + MySQL + JDBCTemplate + Druid + BeanUtilS + tomcat
+
 
